@@ -11,3 +11,11 @@ npm i
 npm start
 ```
 
+## Testing
+
+Verify the GET method api once application server started
+your preferred browser or postman.
+
+```sh
+localhost:3000/api/github/repositories?q=created:>2022-01-01&sort=stars&per_page=10
+```
