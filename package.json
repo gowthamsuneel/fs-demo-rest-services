@@ -1,0 +1,28 @@
+{
+  "name": "fs-demo-rest-services",
+  "version": "1.0.0",
+  "description": "get public repositories from github",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gowthamsuneel/fs-demo-rest-services.git"
+  },
+  "keywords": [
+    "github",
+    "nodejs"
+  ],
+  "author": "gowthamsuneel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gowthamsuneel/fs-demo-rest-services/issues"
+  },
+  "homepage": "https://github.com/gowthamsuneel/fs-demo-rest-services#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.0"
+  }
+}
