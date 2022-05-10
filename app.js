@@ -9,8 +9,19 @@ app.use(async (req, res, next) => {
     next();
 })
 
-app.use("/api/github", require('./router/github-api'));
 
+
+app.use("/api/github", require('./router/github-api'));
+app.use((error, req, res, next) => {
+    console.error(error.stack)
+    res.status(500).send({
+        status: error.code,
+        message: '',
+        data: [],
+        error: error.message
+    })
+  });
 app.listen(port, () => {
     console.log(`app server listening on port ${port}`)
 })
+
